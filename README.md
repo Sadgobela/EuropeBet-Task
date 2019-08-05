@@ -1,0 +1,2 @@
+# EuropeBet-Task
+Landing Page
