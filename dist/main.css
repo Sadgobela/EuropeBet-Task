@@ -27,6 +27,10 @@ body {
   left: 0;
   width: 100%;
   background-position-y: top; }
+  @media (max-width: 767px) {
+    .banner {
+      background: url("../img/mobile-banner.jpg");
+      background-size: 767px; } }
 
 .header {
   padding-top: 25px; }
@@ -69,7 +73,7 @@ body {
     .improved-rakeback .content p {
       margin-bottom: 25px; }
     .improved-rakeback .content .btn-play {
-      padding: 18px 49px;
+      padding: 12px 49px;
       background-color: #3ccc00;
       max-width: 180px;
       font-weight: bold; }
@@ -80,7 +84,10 @@ body {
         transition: 1s all; }
 
 .rakeback-table {
-  margin: 103px auto 0; }
+  margin: 103px auto 25px; }
+  @media (max-width: 1199px) {
+    .rakeback-table {
+      max-width: 100%; } }
   .rakeback-table .background {
     width: 100%;
     text-align: center; }
@@ -90,10 +97,17 @@ body {
       max-width: 1265px;
       width: 100%;
       right: 0;
-      margin: 0 auto; }
+      margin: 0 auto;
+      min-height: 750px; }
+      @media (max-width: 991px) {
+        .rakeback-table .background img {
+          display: none; } }
   .rakeback-table .left-menu {
-    margin-top: 100px;
+    margin-top: 95px;
     padding-left: 145px; }
+    @media (max-width: 1199px) {
+      .rakeback-table .left-menu {
+        padding-left: 50px; } }
     .rakeback-table .left-menu .item {
       position: relative; }
       .rakeback-table .left-menu .item:before {
@@ -116,7 +130,7 @@ body {
         .rakeback-table .left-menu .item .description.orange {
           color: #e96402; }
   .rakeback-table .right-menu {
-    margin-top: 100px; }
+    margin-top: 95px; }
     .rakeback-table .right-menu .text-header {
       color: #878889;
       font-size: 14px;
@@ -126,6 +140,9 @@ body {
       border-radius: 7px;
       padding: 0;
       margin-left: 40px; }
+      @media (min-width: 1800px) {
+        .rakeback-table .right-menu .wrapper {
+          margin-right: 40px; } }
       .rakeback-table .right-menu .wrapper .top {
         border-top-left-radius: 7px;
         border-top-right-radius: 7px;
@@ -286,7 +303,7 @@ body {
         background-color: #515456;
         border-bottom-left-radius: 7px;
         border-bottom-right-radius: 7px;
-        padding: 20px 20px 0; }
+        padding: 20px; }
         .rakeback-table .right-menu .wrapper .bottom .exchange {
           margin-top: 20px;
           display: flex;
@@ -317,6 +334,22 @@ body {
               top: calc(50% - 14px); }
             .rakeback-table .right-menu .wrapper .bottom .exchange-bg p {
               margin-bottom: 0; }
+          .rakeback-table .right-menu .wrapper .bottom .exchange-btn {
+            background-color: #e84e0f;
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 50px;
+            padding: 15px 5px;
+            display: block;
+            width: 40%;
+            margin: 15px auto 0; }
+
+.bottom-btn {
+  position: relative;
+  width: 100%;
+  max-width: 180px;
+  margin: 0 auto; }
 
 .text-orange {
   color: #e84c28; }
