@@ -752,10 +752,10 @@ body {
       transition: 0.8s all; }
 
 .text-orange {
-  color: #e84c28; }
+  color: #e84c28 !important; }
 
 .text-yellow {
-  color: #e7cd11; }
+  color: #e7cd11 !important; }
 
 .font-mediator-narrow {
   font-family: 'MediatorNarrow-Regular'; }
@@ -782,6 +782,9 @@ body {
   .btn-play:hover {
     opacity: 0.8;
     transition: 1s all; }
+
+.font-size-14 {
+  font-size: 14px !important; }
 
 .font-size-16 {
   font-size: 16px; }

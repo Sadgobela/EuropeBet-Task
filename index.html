@@ -81,17 +81,17 @@
                 <div class="wrapper">
                     <div class="top">
                         <p class="end-of-month font-uppercase">თვის დასრულებამდე დარჩა</p>
-                        <div class="date text-orange">
+                    <div class="date text-orange" id="end-of-month-countdown">
                             <span class="date-bg">
-                                25 <span class="font-uppercase"> დღე </span>
+                                <span id="day" class="text-orange font-mediator-narrow font-uppercase font-size-14">25</span> <span class="font-uppercase"> დღე </span>
                             </span>
                             :
                             <span class="date-bg">
-                                10 <span class="font-uppercase">საათი </span>
+                                <span id="hour" class="text-orange font-mediator-narrow font-uppercase font-size-14">10</span> <span class="font-uppercase">საათი </span>
                             </span>
                             :
                             <span class="date-bg">
-                                20 <span class="font-uppercase">წუთი</span>
+                                <span id="minute" class="text-orange font-mediator-narrow font-uppercase font-size-14">25</span> <span class="font-uppercase">წუთი</span>
                             </span>
                         </div>
                         <div class="top-right">
@@ -122,47 +122,47 @@
                             </div>
                         </div>
                         <div class="progress-bar-loader">
-                            <div class="item first active">
+                            <div class="item first active point-0">
                                 <div class="lvl">1</div>
                                 <div class="line"></div>
                                 <div class="points">0</div>
                             </div>
-                            <div class="item" style="">
+                            <div class="item point-1000" style="">
                                 <div class="lvl">2</div>
                                 <div class="line"></div>
                                 <div class="points">1000</div>
                             </div>
-                            <div class="item" style="">
+                            <div class="item point-2500" style="">
                                 <div class="lvl">3</div>
                                 <div class="line"></div>
                                 <div class="points">2500</div>
                             </div>
-                            <div class="item" style="">
+                            <div class="item point-6500" style="">
                                 <div class="lvl">4</div>
                                 <div class="line"></div>
                                 <div class="points">6500</div>
                             </div>
-                            <div class="item" style="">
+                            <div class="item point-11500" style="">
                                 <div class="lvl">5</div>
                                 <div class="line"></div>
                                 <div class="points">11500</div>
                             </div>
-                            <div class="item" style="">
+                            <div class="item point-17500" style="">
                                 <div class="lvl">6</div>
                                 <div class="line"></div>
                                 <div class="points">17500</div>
                             </div>
-                            <div class="item" style="">
+                            <div class="item point-28000" style="">
                                 <div class="lvl">7</div>
                                 <div class="line"></div>
                                 <div class="points">28000</div>
                             </div>
-                            <div class="item" style="">
+                            <div class="item point-40000" style="">
                                 <div class="lvl">8</div>
                                 <div class="line"></div>
                                 <div class="points">40000</div>
                             </div>
-                            <div class="item last" style="">
+                            <div class="item last point-53500" style="">
                                 <div class="lvl">9</div>
                                 <div class="line"></div>
                                 <div class="points">53500</div>
@@ -239,13 +239,15 @@
                         </div>
                     </div>
                     <div class="bottom-txt">
-                        მოთამაშემ აპრილის განმავლობაში გამოიმუშავა 50₾-ის რეიკი ნარდისა და დომინოს თამაშით. რადგან 50₾-ის რეიკით მოთამაშე არის 1 რანგზე,
+                        მოთამაშემ აპრილის განმავლობაში გამოიმუშავა 50₾-ის რეიკი ნარდისა და დომინოს თამაშით. რადგან
+                        50₾-ის რეიკით მოთამაშე არის 1 რანგზე,
                         აქვს 10%-იანი რეიკბექი. ის მიიღებს 50₾*10%=5₾ რეიკბექს // 500 რეიკ ქულას.
                     </div>
                 </div>
                 <div class="right-content">
-                    მოთამაშემ თვის განმავლობაში თუ დააგროვა 1 000 რეიკ ქულა, ის გადავა მეორე რანგზე და მიიღებს 15%-იან რეიკბექს.
-                    მოთამაშეს დაგროვილი ქულებით, ნებისმიერ დროს, შეუძლია გაანაღდოს მინიმუმ 0.2₾  და მაქსიმუმ 50₾
+                    მოთამაშემ თვის განმავლობაში თუ დააგროვა 1 000 რეიკ ქულა, ის გადავა მეორე რანგზე და მიიღებს 15%-იან
+                    რეიკბექს.
+                    მოთამაშეს დაგროვილი ქულებით, ნებისმიერ დროს, შეუძლია გაანაღდოს მინიმუმ 0.2₾ და მაქსიმუმ 50₾
                 </div>
             </div>
         </div>
@@ -280,14 +282,22 @@
         <ul>
             <li>საწყის ეტაპზე ყველა მოთამაშეს ენიჭება პირველი დონე, ანუ იღებს 10%-იან რეიკბექს.</li>
             <li> მოთამაშე რანგს იღებს მინიმუმ 1 თვის ვადით.</li>
-            <li>რანგის გასაზრდელად მოთამაშემ თვის ჭრილში (1 რიცხვიდან მომდევნო თვის 1 რიცხვამდე) უნდა დააგროვოს სასურველი რანგის შესაბამისი რეიკ ქულების რაოდენობა.</li>
-            <li>მოთამაშეს შეუძლია თვის განმავლობაში რამდენჯერმე აიმაღლოს რანგი, მთავარია დააგროვოს საკვალიფიკაციო რეიკ ქულები.</li>
+            <li>რანგის გასაზრდელად მოთამაშემ თვის ჭრილში (1 რიცხვიდან მომდევნო თვის 1 რიცხვამდე) უნდა დააგროვოს
+                სასურველი რანგის შესაბამისი რეიკ ქულების რაოდენობა.
+            </li>
+            <li>მოთამაშეს შეუძლია თვის განმავლობაში რამდენჯერმე აიმაღლოს რანგი, მთავარია დააგროვოს საკვალიფიკაციო რეიკ
+                ქულები.
+            </li>
             <li>თუ მოთამაშე გადადის შემდეგ რანგზე, ის ავტომატურად იღებს გაზრდილ რეიკბექს.</li>
             <li class="mb-0">
                 თვის ბოლოს მოპოვებული სტატუსი აქტიურია მომდევნო თვის განმავლობაში.
-                <p class="pl-3 mb-0">- მაგ. აპრილში თვის ბოლოს მიღებული მე-2 რანგი მოთამაშეს შეუნარჩუნდება მაისის თვეშიც.</p>
+                <p class="pl-3 mb-0">- მაგ. აპრილში თვის ბოლოს მიღებული მე-2 რანგი მოთამაშეს შეუნარჩუნდება მაისის
+                    თვეშიც.</p>
             </li>
-            <li> სტატუსის შესანარჩუნებლად აუცილებელია მომხმარებელმა შემდეგ თვეშიც დააგროვოს რეიკ ქულების საჭირო რაოდენობა, წინააღმდეგ შემთხვევაში ის გადაინაცვლებს თვის ჭრილში დაგროვებული რეიკ ქულების შესაბამის რანგზე.</li>
+            <li> სტატუსის შესანარჩუნებლად აუცილებელია მომხმარებელმა შემდეგ თვეშიც დააგროვოს რეიკ ქულების საჭირო
+                რაოდენობა, წინააღმდეგ შემთხვევაში ის გადაინაცვლებს თვის ჭრილში დაგროვებული რეიკ ქულების შესაბამის
+                რანგზე.
+            </li>
         </ul>
     </div>
 </section>
@@ -314,10 +324,10 @@
 
             <a href="#">
                 <div class="col-lg-4 box bura">
-                   <div>
-                       <img src="img/bura.png">
-                       <p class="font-uppercase ">ბურა</p>
-                   </div>
+                    <div>
+                        <img src="img/bura.png">
+                        <p class="font-uppercase ">ბურა</p>
+                    </div>
                 </div>
             </a>
         </div>
@@ -341,7 +351,7 @@
                         <span class="font-size-16 mb-3 d-block">Get unlimited freebets</span>
                         <div class="mb-5">Only on Europebet</div>
                         <a href="#" class="learn-more-btn font-uppercase">
-                         Learn More
+                            Learn More
                         </a>
                     </div>
                 </div>
@@ -352,7 +362,8 @@
                         <img src="img/cashout.png">
                     </div>
                     <div class="col-md-6">
-                        <span class="font-size-16 mb-3 d-block"><span class="font-size-16">Use the Cashout function</span></span>
+                        <span class="font-size-16 mb-3 d-block"><span
+                                class="font-size-16">Use the Cashout function</span></span>
                         <div class="mb-4">
                             Stop the slip at the desired time and receive a guaranteed amount
                         </div>
@@ -366,6 +377,7 @@
     </div>
 </section>
 
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -375,5 +387,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </body>
 </html>
