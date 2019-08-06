@@ -2,4 +2,7 @@
   @media (min-width: 1280px) {
     max-width: 1290px;
   }
+  @media (max-width: 767px){
+    max-width: 100%;
+  }
 }

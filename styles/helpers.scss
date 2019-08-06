@@ -15,3 +15,27 @@
   -webkit-font-feature-settings: 'case';
   font-feature-settings: 'case' on;
 }
+
+.btn-play {
+  padding: 12px 49px;
+  background-color: #3ccc00;
+  max-width: 180px;
+  font-weight: bold;
+  @media(max-width: 991px){
+    margin: 0 auto;
+  }
+  &:hover, &:focus, &:active:focus {
+    box-shadow: none;
+  }
+  &:hover {
+    opacity: 0.8;
+    transition: 1s all;
+  }
+}
+
+.font-size-16{
+  font-size: 16px;
+}
+.font-size-24{
+  font-size: 24px;
+}
