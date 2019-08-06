@@ -865,3 +865,34 @@ body {
     }
   }
 }
+
+
+.other-offers{
+  margin-top: 135px;
+  margin-bottom: 135px;
+  .left-content, .right-content{
+    margin-bottom: 65px;
+    img{
+      max-width: 100%;
+    }
+    @media(min-width: 319px){
+      .col-md-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+    }
+  }
+  .learn-more-btn{
+    background-color: #f05a22;
+    min-width: 135px;
+    padding: 8px 27px;
+    border-radius: 3px;
+    color: #ffffff;
+    text-decoration: none;
+    &:hover{
+      opacity: 0.8;
+      transition: 0.8s all;
+    }
+  }
+}

@@ -728,6 +728,29 @@ body {
     .games .content a {
       text-decoration: none; }
 
+.other-offers {
+  margin-top: 135px;
+  margin-bottom: 135px; }
+  .other-offers .left-content, .other-offers .right-content {
+    margin-bottom: 65px; }
+    .other-offers .left-content img, .other-offers .right-content img {
+      max-width: 100%; }
+    @media (min-width: 319px) {
+      .other-offers .left-content .col-md-6, .other-offers .right-content .col-md-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%; } }
+  .other-offers .learn-more-btn {
+    background-color: #f05a22;
+    min-width: 135px;
+    padding: 8px 27px;
+    border-radius: 3px;
+    color: #ffffff;
+    text-decoration: none; }
+    .other-offers .learn-more-btn:hover {
+      opacity: 0.8;
+      transition: 0.8s all; }
+
 .text-orange {
   color: #e84c28; }
 
