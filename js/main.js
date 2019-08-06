@@ -49,13 +49,55 @@
     PointCounter.prototype.init = function () {
         this.intervalId = setInterval(() => {
             this.counter();
-        }, 1);
+        }, 60);
     };
 
     PointCounter.prototype.counter = function () {
         this.initialPoint = this.initialPoint + 100;
 
-        $('.my-points-counter').html(this.initialPoint);
+
+        if(this.initialPoint < 53501){
+            $('.my-points-counter').html(this.initialPoint);
+            $('.money-gained').html(this.initialPoint/100);
+        }
+
+        if(this.initialPoint > 500){
+            $('.point-0').addClass('active');
+            $('.rake-percent').html(10);
+            $('.rank-lvl').html(1);
+        }if(this.initialPoint > 1000){
+            $('.point-1000').addClass('active');
+            $('.rake-percent').html(15);
+            $('.rank-lvl').html(2);
+        }if(this.initialPoint > 2500){
+            $('.point-2500').addClass('active');
+            $('.rake-percent').html(20);
+            $('.rank-lvl').html(3);
+        }if(this.initialPoint > 6500){
+            $('.point-6500').addClass('active');
+            $('.rake-percent').html(25);
+            $('.rank-lvl').html(4);
+        }if(this.initialPoint > 11500){
+            $('.point-11500').addClass('active');
+            $('.rake-percent').html(30);
+            $('.rank-lvl').html(5);
+        }if(this.initialPoint > 17500){
+            $('.point-17500').addClass('active');
+            $('.rake-percent').html(35);
+            $('.rank-lvl').html(6);
+        }if(this.initialPoint > 28000){
+            $('.point-28000').addClass('active');
+            $('.rake-percent').html(40);
+            $('.rank-lvl').html(7);
+        }if(this.initialPoint > 40000){
+            $('.point-40000').addClass('active');
+            $('.rake-percent').html(50);
+            $('.rank-lvl').html(8);
+        }if(this.initialPoint > 53500){
+            $('.point-53500').addClass('active');
+            $('.rake-percent').html(60);
+            $('.rank-lvl').html(9);
+        }
     };
 
     (new PointCounter().init());
