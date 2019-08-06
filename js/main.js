@@ -91,11 +91,11 @@
             $('.rank-lvl').html(7);
         }if(this.initialPoint > 40000){
             $('.point-40000').addClass('active');
-            $('.rake-percent').html(50);
+            $('.rake-percent').html(45);
             $('.rank-lvl').html(8);
         }if(this.initialPoint > 53500){
             $('.point-53500').addClass('active');
-            $('.rake-percent').html(60);
+            $('.rake-percent').html(50);
             $('.rank-lvl').html(9);
         }
     };
