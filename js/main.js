@@ -49,7 +49,7 @@
     PointCounter.prototype.init = function () {
         this.intervalId = setInterval(() => {
             this.counter();
-        }, 60);
+        }, 75);
     };
 
     PointCounter.prototype.counter = function () {
